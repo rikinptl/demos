@@ -1,0 +1,2 @@
+# Pin when you add Groq/Resend (e.g. httpx, requests)
+# Core generator uses stdlib only (csv, json, hashlib, pathlib).

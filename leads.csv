@@ -1,0 +1,2 @@
+business_name,category,skill_key,city,address,phone,hours,rating,review_count,reviews,email,years_in_business,services_notes
+"Joe's Plumbing",plumbing,plumber,Dallas,"123 Main St, Dallas TX",(214) 555-0100,"Mon–Fri 7am–6pm, Sat 8am–2pm",4.8,203,"Sarah M: Fixed our leak same day. | Tom: Fair pricing and clean work.",contact@example.com,12,"Drain cleaning, Water heater install"

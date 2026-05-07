@@ -1,0 +1,45 @@
+# Initial skeleton: generate site from the last row in leads.csv.
+# Later: Groq, deploy to gh-pages branch, Resend, tracking CSV updates.
+name: Demo pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      row:
+        description: "0-based row index in leads.csv (leave empty for last row)"
+        required: false
+        default: ""
+  push:
+    branches: [main]
+    paths:
+      - "leads.csv"
+      - "skills/**"
+      - "templates/**"
+      - "scripts/**"
+
+permissions:
+  contents: read
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate demo HTML
+        run: |
+          if [ -n "${{ github.event.inputs.row }}" ]; then
+            python3 scripts/generate.py --row "${{ github.event.inputs.row }}"
+          else
+            python3 scripts/generate.py
+          fi
+
+      - name: Upload artifact (preview build)
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo-output
+          path: output/

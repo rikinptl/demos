@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{TAGLINE}}</title>
+  <meta name="description" content="{{META_DESC}}" />
+  <style>
+    :root {
+      --neon: {{NEON_COLOR}};
+      --bg: #07080d;
+      --bg2: #0e1018;
+      --text: #e8e9ed;
+      --muted: #989aa8;
+      --card: rgba(255, 255, 255, 0.04);
+      --border: rgba(255, 255, 255, 0.08);
+      --glow: color-mix(in srgb, var(--neon) 55%, transparent);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, rgba(120, 90, 255, 0.12), transparent 55%),
+                  radial-gradient(900px 500px at 90% 0%, color-mix(in srgb, var(--neon) 18%, transparent), transparent 50%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+    a { color: var(--neon); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+    header {
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: blur(12px);
+      background: rgba(7, 8, 13, 0.72);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 0.9rem 0; gap: 1rem; flex-wrap: wrap; }
+    .brand { font-weight: 700; letter-spacing: 0.02em; font-size: 1.05rem; }
+    .cta-top {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.55rem 1rem; border-radius: 999px;
+      border: 1px solid color-mix(in srgb, var(--neon) 55%, transparent);
+      background: linear-gradient(180deg, color-mix(in srgb, var(--neon) 22%, transparent), transparent);
+      color: var(--text); font-weight: 600; font-size: 0.92rem;
+      box-shadow: 0 0 24px var(--glow);
+    }
+    .cta-top:hover { text-decoration: none; filter: brightness(1.08); }
+    .hero { padding: 4rem 0 3rem; }
+    .hero-grid { display: grid; gap: 2rem; align-items: center; }
+    @media (min-width: 860px) { .hero-grid { grid-template-columns: 1.15fr 0.85fr; } }
+    .kicker {
+      display: inline-block; font-size: 0.78rem; letter-spacing: 0.14em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3.35rem);
+      line-height: 1.05; font-weight: 800; letter-spacing: -0.03em;
+    }
+    .neon-word {
+      display: inline-block;
+      color: var(--bg);
+      background: linear-gradient(120deg, var(--neon), color-mix(in srgb, white 35%, var(--neon)));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 18px var(--glow));
+    }
+    .hero-sub { margin-top: 1.1rem; font-size: 1.1rem; color: var(--muted); max-width: 46ch; }
+    .hero-card {
+      border: 1px solid var(--border);
+      border-radius: 1.25rem;
+      padding: 1.35rem;
+      background: linear-gradient(160deg, var(--card), transparent);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    }
+    .hero-card h3 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 0.75rem; }
+    .mini-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; text-align: center; }
+    .mini-stats div { padding: 0.65rem; border-radius: 0.85rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border); }
+    .mini-stats strong { display: block; font-size: 1.15rem; color: var(--text); }
+    .mini-stats span { font-size: 0.75rem; color: var(--muted); }
+    section { padding: 3rem 0; border-top: 1px solid var(--border); }
+    h2 { font-size: 1.6rem; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
+    .grid-3 { display: grid; gap: 1rem; }
+    @media (min-width: 720px) { .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+    .card {
+      padding: 1.15rem 1.2rem; border-radius: 1rem; border: 1px solid var(--border);
+      background: var(--card);
+    }
+    .card .ic { font-size: 1.25rem; margin-bottom: 0.35rem; opacity: 0.9; }
+    .card h3 { font-size: 1.02rem; margin-bottom: 0.35rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .reviews { display: grid; gap: 1rem; }
+    @media (min-width: 720px) { .reviews { grid-template-columns: repeat(3, 1fr); } }
+    .quote { font-size: 0.98rem; color: var(--text); }
+    .who { margin-top: 0.6rem; font-size: 0.85rem; color: var(--muted); }
+    table.hours { width: 100%; border-collapse: collapse; }
+    table.hours td { padding: 0.55rem 0; border-bottom: 1px solid var(--border); color: var(--muted); }
+    table.hours td:first-child { color: var(--text); font-weight: 600; width: 38%; }
+    footer { padding: 2.5rem 0 3rem; color: var(--muted); font-size: 0.9rem; }
+    .foot-row { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; justify-content: space-between; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">{{BUSINESS_NAME}}</div>
+      <a class="cta-top" href="tel:{{PHONE_RAW}}">{{PHONE_DISPLAY}}</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="kicker">{{CITY}} · {{CATEGORY}}</p>
+          <h1>{{HERO_LINE1}}<br /><span class="neon-word">{{HERO_LINE2}}</span></h1>
+          <p class="hero-sub">{{HERO_SUB}}</p>
+        </div>
+        <aside class="hero-card" aria-label="Highlights">
+          <h3>At a glance</h3>
+          <div class="mini-stats">{{STATS_HTML}}</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <h2>Services</h2>
+        <div class="grid-3">{{SERVICES_HTML}}</div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="wrap">
+        <h2>Why choose us</h2>
+        <div class="grid-3">{{FEATURES_HTML}}</div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="wrap">
+        <h2>What neighbors say</h2>
+        <div class="reviews">{{REVIEWS_HTML}}</div>
+      </div>
+    </section>
+
+    <section id="hours">
+      <div class="wrap">
+        <h2>Hours &amp; location</h2>
+        <p style="color: var(--muted); margin-bottom: 1rem;">{{ADDRESS}}</p>
+        <table class="hours">{{HOURS_HTML}}</table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-row">
+      <span>© {{YEAR}} {{BUSINESS_NAME}}</span>
+      <span>{{EMAIL_DISPLAY}}</span>
+    </div>
+  </footer>
+</body>
+</html>

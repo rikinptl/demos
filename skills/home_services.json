@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "variants": {
+    "plumber": {
+      "neon_color": "#00b4ff",
+      "headline_pairs": [
+        ["Expert Plumbing", "Done Right."],
+        ["Fast, Reliable", "Repairs."],
+        ["Your Local", "Plumbing Pros."]
+      ],
+      "hero_sub_with_reviews": "Trusted by {review_count}+ homeowners across {city} with a {rating}-star rating.",
+      "hero_sub_generic": "Same-day service, upfront pricing, and workmanship you can count on in {city}.",
+      "tagline_template": "{business_name} — {category} serving {city}.",
+      "meta_desc_template": "{business_name}: trusted {category} in {city}. Call for fast service and honest estimates.",
+      "stats_fallback": [
+        { "number": "24/7", "label": "Emergency help" },
+        { "number": "Licensed", "label": "& insured" },
+        { "number": "Free", "label": "Estimates" }
+      ],
+      "features": [
+        { "title": "Licensed & bonded", "description": "Fully certified pros who stand behind every job." },
+        { "title": "Emergency service", "description": "Burst pipe or backup? We prioritize urgent calls." },
+        { "title": "Upfront pricing", "description": "Clear quotes before work begins — no surprises." },
+        { "title": "Local & trusted", "description": "Neighbors in {city} rely on us for honest, lasting fixes." }
+      ],
+      "services": [
+        { "icon": "◆", "title": "Leak detection & repair", "description": "Find hidden leaks fast and fix them right the first time." },
+        { "icon": "◇", "title": "Drain cleaning", "description": "Clear tough clogs and restore full flow without damaging pipes." },
+        { "icon": "◆", "title": "Water heater service", "description": "Repair, flush, or replace — tank and tankless options." },
+        { "icon": "◇", "title": "Fixture installs", "description": "Faucets, toilets, disposals installed neatly and to code." },
+        { "icon": "◆", "title": "Sewer line help", "description": "Camera inspections and solutions that fit your property." },
+        { "icon": "◇", "title": "Preventive maintenance", "description": "Catch small issues before they become expensive emergencies." }
+      ],
+      "review_voice": [
+        "Called at night and they walked me through shutting the water off. Saved us a ton of damage.",
+        "Fair price and they cleaned up like they were never here. Already told the neighbors.",
+        "Finally a plumber who shows up on time and explains what they're doing."
+      ],
+      "synthetic_review_names": ["Alex", "Jordan", "Sam"]
+    },
+    "electrician": {
+      "neon_color": "#f0e040",
+      "headline_pairs": [
+        ["Safe, Code-Compliant", "Electrical Work."],
+        ["Powering {city}", "Reliably."],
+        ["Expert Electricians", "On Call."]
+      ],
+      "hero_sub_with_reviews": "{review_count}+ reviews and a {rating}-star average from families and businesses in {city}.",
+      "hero_sub_generic": "Licensed electricians delivering safe installs and fast troubleshooting in {city}.",
+      "tagline_template": "{business_name} — electrical services in {city}.",
+      "meta_desc_template": "{business_name}: professional electrician in {city}. Panels, outlets, lighting, and safety upgrades.",
+      "stats_fallback": [
+        { "number": "Licensed", "label": "Electricians" },
+        { "number": "Same-week", "label": "Scheduling" },
+        { "number": "Safety", "label": "First always" }
+      ],
+      "features": [
+        { "title": "Code-compliant work", "description": "Permits and inspections handled when required." },
+        { "title": "Panel upgrades", "description": "Modernize overloaded panels for today's power needs." },
+        { "title": "Lighting design", "description": "Indoor and outdoor lighting that looks and performs great." },
+        { "title": "Troubleshooting", "description": "We find the real cause — not just the symptom." }
+      ],
+      "services": [
+        { "icon": "⚡", "title": "Panel upgrades", "description": "Safe capacity for EV chargers, AC, and modern appliances." },
+        { "icon": "⚡", "title": "Outlet & switch installs", "description": "New circuits, GFCI protection, and smart switches." },
+        { "icon": "⚡", "title": "Lighting installs", "description": "Recessed, pendant, under-cabinet, and exterior lighting." },
+        { "icon": "⚡", "title": "Ceiling fans", "description": "Balanced installs with proper support and switching." },
+        { "icon": "⚡", "title": "EV charger circuits", "description": "Dedicated lines sized right for your charger and panel." },
+        { "icon": "⚡", "title": "Safety inspections", "description": "Identify hazards before they become emergencies." }
+      ],
+      "review_voice": [
+        "They explained the panel issue clearly and finished the same day. Zero fluff.",
+        "Neat work — labels on everything. You can tell they take pride in it.",
+        "Quote matched the invoice. That never happens with contractors."
+      ],
+      "synthetic_review_names": ["Riley", "Casey", "Morgan"]
+    },
+    "hvac": {
+      "neon_color": "#40e0ff",
+      "headline_pairs": [
+        ["Comfort", "Year-Round."],
+        ["HVAC That", "Actually Fits."],
+        ["Heating & Cooling", "Experts."]
+      ],
+      "hero_sub_with_reviews": "Rated {rating} stars from {review_count}+ customers who trust us in {city}.",
+      "hero_sub_generic": "Repairs, tune-ups, and replacements focused on efficiency and honest recommendations in {city}.",
+      "tagline_template": "{business_name} — HVAC pros in {city}.",
+      "meta_desc_template": "{business_name}: heating and cooling in {city}. Repairs, maintenance, and installs done right.",
+      "stats_fallback": [
+        { "number": "Tune-ups", "label": "Seasonal" },
+        { "number": "All brands", "label": "Serviced" },
+        { "number": "Financing", "label": "Options" }
+      ],
+      "features": [
+        { "title": "Right-sized solutions", "description": "We match equipment to your home — not oversell." },
+        { "title": "Energy efficiency", "description": "Lower bills and better comfort with smart upgrades." },
+        { "title": "Maintenance plans", "description": "Catch issues early and extend system life." },
+        { "title": "Fast response", "description": "Heat wave or cold snap — we prioritize no-heat/no-cool calls." }
+      ],
+      "services": [
+        { "icon": "❄", "title": "AC repair", "description": "Diagnose weak cooling, odd noises, and high bills." },
+        { "icon": "☀", "title": "Heating repair", "description": "Furnace and heat pump fixes with safety checks." },
+        { "icon": "❄", "title": "Installations", "description": "Replacements with clear options and solid warranties." },
+        { "icon": "☀", "title": "Ductwork help", "description": "Airflow improvements and leak reduction." },
+        { "icon": "❄", "title": "Thermostats", "description": "Smart stats programmed for your routine." },
+        { "icon": "☀", "title": "Preventive tune-ups", "description": "Seasonal checks to avoid mid-season breakdowns." }
+      ],
+      "review_voice": [
+        "House is finally even — no more hot upstairs, cold downstairs.",
+        "They didn't push a new unit when a repair made sense. Rare.",
+        "On time, professional, and the quote was straightforward."
+      ],
+      "synthetic_review_names": ["Jamie", "Taylor", "Quinn"]
+    },
+    "landscaper": {
+      "neon_color": "#7fff00",
+      "headline_pairs": [
+        ["Outdoor Spaces", "Transformed."],
+        ["Curb Appeal", "Delivered."],
+        ["Landscaping", "Done Right."]
+      ],
+      "hero_sub_with_reviews": "{rating} stars from {review_count}+ {city} homeowners who love their yards again.",
+      "hero_sub_generic": "Design, install, and maintenance that fits your property and budget in {city}.",
+      "tagline_template": "{business_name} — landscaping in {city}.",
+      "meta_desc_template": "{business_name}: landscaping and lawn care in {city}. Design, install, and seasonal maintenance.",
+      "stats_fallback": [
+        { "number": "Local", "label": "Crews" },
+        { "number": "Design", "label": "& install" },
+        { "number": "Seasonal", "label": "Programs" }
+      ],
+      "features": [
+        { "title": "Thoughtful design", "description": "Plants and hardscape chosen for your climate and lifestyle." },
+        { "title": "Sustainable options", "description": "Water-smart choices that still look great." },
+        { "title": "Reliable maintenance", "description": "Consistent care so your investment keeps improving." },
+        { "title": "Clear proposals", "description": "Phased options if you want to build over time." }
+      ],
+      "services": [
+        { "icon": "🌿", "title": "Landscape design", "description": "Plans that balance beauty, function, and upkeep." },
+        { "icon": "🌿", "title": "Planting & beds", "description": "Soil prep, mulch, and plant selection for lasting health." },
+        { "icon": "🌿", "title": "Lawn care", "description": "Mowing, edging, fertilization, and weed control programs." },
+        { "icon": "🌿", "title": "Hardscape", "description": "Patios, walkways, and retaining walls built to last." },
+        { "icon": "🌿", "title": "Irrigation", "description": "Repairs, upgrades, and water-efficient scheduling." },
+        { "icon": "🌿", "title": "Seasonal cleanup", "description": "Spring and fall refreshes to reset your property." }
+      ],
+      "review_voice": [
+        "Our backyard went from embarrassing to where we host every weekend.",
+        "They actually listened to low-maintenance — and delivered it.",
+        "Crew was respectful, on schedule, and the yard looks sharp."
+      ],
+      "synthetic_review_names": ["Drew", "Skyler", "Avery"]
+    },
+    "salon": {
+      "neon_color": "#ff2bd6",
+      "headline_pairs": [
+        ["Look Your", "Best."],
+        ["Style & Care", "In One Place."],
+        ["{city}'s", "Go-To Salon."]
+      ],
+      "hero_sub_with_reviews": "Guests rate us {rating} stars across {review_count}+ visits — thank you, {city}.",
+      "hero_sub_generic": "Cuts, color, and treatments in a relaxed {city} studio focused on you.",
+      "tagline_template": "{business_name} — {category} in {city}.",
+      "meta_desc_template": "{business_name}: salon services in {city}. Book your next cut, color, or treatment.",
+      "stats_fallback": [
+        { "number": "Walk-ins", "label": "Welcome" },
+        { "number": "Experienced", "label": "Stylists" },
+        { "number": "Quality", "label": "Products" }
+      ],
+      "features": [
+        { "title": "Consultation-first", "description": "We align on the look before we pick up the scissors or color." },
+        { "title": "Healthy hair focus", "description": "Treatments and home-care tips that protect your hair." },
+        { "title": "Relaxed atmosphere", "description": "Unwind with pros who respect your time." },
+        { "title": "Easy booking", "description": "Simple scheduling — call or message and you're set." }
+      ],
+      "services": [
+        { "icon": "✦", "title": "Cuts & styling", "description": "Precision cuts, blowouts, and everyday styles." },
+        { "icon": "✦", "title": "Color", "description": "Balayage, highlights, gloss, and gray blending." },
+        { "icon": "✦", "title": "Treatments", "description": "Deep conditioning, bond repair, and scalp care." },
+        { "icon": "✦", "title": "Extensions", "description": "Consultation for length and volume that looks natural." },
+        { "icon": "✦", "title": "Special occasion", "description": "Weddings, events, and photo-ready styling." },
+        { "icon": "✦", "title": "Men's grooming", "description": "Cuts, beard trims, and clean finishes." }
+      ],
+      "review_voice": [
+        "Finally found someone who gets my curl pattern — huge relief.",
+        "Color looks natural in daylight, not just in the salon mirror.",
+        "Friendly team, fair prices, and I always leave feeling better."
+      ],
+      "synthetic_review_names": ["Blake", "Reese", "Kendall"]
+    },
+    "home_services_default": {
+      "neon_color": "#a78bfa",
+      "headline_pairs": [
+        ["Quality Work", "Local Team."],
+        ["Serving {city}", "With Pride."],
+        ["Trusted Pros", "Near You."]
+      ],
+      "hero_sub_with_reviews": "{review_count}+ reviews and a {rating}-star average in {city}.",
+      "hero_sub_generic": "Reliable service, clear communication, and fair pricing for neighbors in {city}.",
+      "tagline_template": "{business_name} — serving {city}.",
+      "meta_desc_template": "{business_name} in {city}. Professional service you can recommend to friends and family.",
+      "stats_fallback": [
+        { "number": "Licensed", "label": "& insured" },
+        { "number": "Free", "label": "Estimates" },
+        { "number": "Local", "label": "Team" }
+      ],
+      "features": [
+        { "title": "Clear communication", "description": "You always know what's happening and what it costs." },
+        { "title": "Quality workmanship", "description": "We build and fix things to last — not to rush." },
+        { "title": "Respect for your home", "description": "Clean job sites and careful crews every time." },
+        { "title": "Local reputation", "description": "We win repeat business the old-fashioned way." }
+      ],
+      "services": [
+        { "icon": "★", "title": "Consultation", "description": "We assess your needs and recommend the right scope." },
+        { "icon": "★", "title": "Core services", "description": "Skilled work tailored to your property and timeline." },
+        { "icon": "★", "title": "Preventive care", "description": "Maintenance that avoids costly surprises later." },
+        { "icon": "★", "title": "Upgrades", "description": "Modern options that improve comfort and value." },
+        { "icon": "★", "title": "Emergency help", "description": "Priority response when timing matters most." },
+        { "icon": "★", "title": "Warranty-minded", "description": "We stand behind our work with clear follow-up." }
+      ],
+      "review_voice": [
+        "Professional from the first call to the final walkthrough.",
+        "They did what they said they'd do — refreshing.",
+        "I'd hire them again without hesitating."
+      ],
+      "synthetic_review_names": ["Chris", "Pat", "Lee"]
+    }
+  }
+}

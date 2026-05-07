@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "packs": {
+    "home_services": "home_services.json"
+  },
+  "resolve": {
+    "plumber": { "pack": "home_services", "variant": "plumber", "fallback": ["home_services_default"] },
+    "electrician": { "pack": "home_services", "variant": "electrician", "fallback": ["home_services_default"] },
+    "hvac": { "pack": "home_services", "variant": "hvac", "fallback": ["home_services_default"] },
+    "landscaper": { "pack": "home_services", "variant": "landscaper", "fallback": ["home_services_default"] },
+    "salon": { "pack": "home_services", "variant": "salon", "fallback": ["home_services_default"] },
+    "generic": { "pack": "home_services", "variant": "home_services_default", "fallback": [] }
+  }
+}
