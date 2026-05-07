@@ -2,6 +2,8 @@
 """
 Slot-fill the static site template from leads.csv + skills packs.
 No network / no AI — deterministic output for a single lead row.
+
+Designed to run in GitHub Actions (see .github/workflows/pipeline.yml).
 """
 from __future__ import annotations
 

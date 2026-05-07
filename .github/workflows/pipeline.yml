@@ -16,6 +16,7 @@ on:
       - "skills/**"
       - "templates/**"
       - "scripts/**"
+      - ".github/workflows/pipeline.yml"
 
 permissions:
   contents: read
